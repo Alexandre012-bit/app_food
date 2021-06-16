@@ -1,12 +1,10 @@
-import { Routes } from '@angular/router'
+import { Route } from "@angular/router"
+import { HomeComponent } from "./home/home.component"
+import { AboutComponent} from "./about/about.component"
+import { RestaurantsComponent } from "./restaurants/restaurants.component"
 
-
-import { HomeComponent } from './home/home.component'
-import { AboutComponent} from  './about/about.component'
-
-
-
-export const ROUTES: Routes =[
-    {path: '', component: HomeComponent},
-    {path: 'About', component: AboutComponent}
+export const ROUTES = [
+{path: '', component: HomeComponent},
+{path: 'about', component: AboutComponent},
+{path: 'restaurants', component: RestaurantsComponent}
 ]
