@@ -1,8 +1,8 @@
-import { Restaurant } from "./restaurant/restaurant.model";
+import { Restaurant } from "./restaurant/restaurant.model"
 
 
 export class RestaurantsService {
-    rests: Restaurant[] = [
+    restaurant: Restaurant[] = [
         {
             id: "bread-bakery",
             name: "Bread & Bakery",
@@ -25,6 +25,6 @@ export class RestaurantsService {
 
 
     restaurants(): Restaurant[] {
-        return this.rests;
+        return this.restaurant;
     }
 }
